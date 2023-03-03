@@ -1,0 +1,79 @@
+:root {
+    --current-height: 14vw;
+    --ball-size: 7.5vw;
+    --center-width: calc(50vw - var(--current-height)/2);
+}
+
+.current-number {
+    background-color: white;
+    width: var(--current-height);
+    height: var(--current-height);
+
+    position: absolute;
+    left: var(--center-width);
+    top: 28vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    border: rgb(155, 7, 7) solid 5px;
+    overflow: hidden;
+}
+
+.external-ball{
+    width: var(--ball-size);
+    height: var(--ball-size);
+    background-color: rgb(191, 24, 233);
+    border-radius: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.internal-ball {
+    width: 6vh;
+    height: 6vh;
+    background-color: white;
+    border-radius: 300px;
+    border: black  5px double;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.playerWin > p {
+    font-size: larger;
+    background-image: linear-gradient(135deg, rgb(6, 61, 214) 0%, rgb(21, 165, 76) 34%);
+  
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    -webkit-text-fill-color: transparent;
+    font-style: oblique;
+}
+
+.botWin > p {
+    font-size: larger;
+    background-image: linear-gradient(135deg, rgb(212, 16, 16), rgb(231, 168, 33));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width:960px) {
+    .current-number {
+        position: relative;
+        margin: 0px;
+        top: auto;
+        margin: 70px 0px 50px 0px;
+    }
+}

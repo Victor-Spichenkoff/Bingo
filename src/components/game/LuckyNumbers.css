@@ -1,0 +1,44 @@
+.lucky-numbers {
+    color: black;
+    text-align: center;
+    /* display: grid;
+    grid-template-rows: repeat(10 1fr);
+    grid-template-columns: repeat(10, 1fr); */
+    /* display:  flex;
+    flex-direction: row;
+    justify-content: center; */
+    background-color: black;
+    width: 40vw;
+    background: radial-gradient(circle, #740710, #5a0916, #3e0c16, #240b10, #000000);
+    border-bottom-right-radius: 17px;
+    box-shadow: 0px 5px 10px 0px black;
+}
+
+.lucky-row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.ball {
+    border-radius: 90px;
+    background-color: rgba(255, 255, 255, 0.616);
+    margin: 10px;
+    width: 1.6vw;
+    height: 1.6vw;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(47, 105, 128) solid 2px;
+}
+
+.lucky {
+    background-color: white;
+}
+
+@media(max-width:960px) {
+    .lucky-numbers {
+        width: 100%;
+        position: relative;
+    }
+}

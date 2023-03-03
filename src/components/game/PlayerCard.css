@@ -1,0 +1,115 @@
+div.player-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+div.player-card-area {
+    background-color: white;
+    width: 40vw;
+    border-radius: 20px;
+
+}
+
+
+div.player-row {
+    /* display: grid;
+    grid-template-columns: repeat(5, 8vw);
+    text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+p.player-number {
+    /* margin: 15px; */
+    padding: 0px;
+    font-size: 1.5vw;
+    /* background-color: rgb(135, 207, 235); */
+    background-color: rgb(164, 213, 233);
+    border-radius: 300px;
+    box-sizing: border-box;
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.selected-number {
+    background-color: rgb(72, 190, 236);
+
+    border: solid 2.8px  rgb(0, 0, 0);
+}
+
+.player-number:hover {
+    /* font-size: 2vw; */
+
+    border: solid 2.8px  rgb(0, 0, 0);
+
+    background-color: rgb(72, 190, 236);
+}
+
+#play-pause {
+    width: 5vw;
+    height: 5vw;
+    background: none;
+    border: linear-gradient(90deg, black, white) 3px solid;
+    margin-right: 60px;
+}
+
+#alert-bingo {
+    margin-left: 60px;
+    height: 5vh;
+    padding: 2px 7px;
+    border-radius: 5px;
+    background-color: rgb(207, 6, 6);
+    color: rgb(238, 252, 54);
+    box-shadow: 0px 2px 4px 0px black;
+    font-style: oblique;
+    font-size: larger;
+}
+
+#alert-bingo:hover {
+    background-color: rgb(141, 4, 4);
+    
+}
+
+button#alert-bingo.locked {
+    background-color: rgba(141, 4, 4, 0.13);
+    color: rgba(239, 252, 54, 0.356);
+    border: 0px;
+}
+
+
+button.alert-bingo2{
+    margin-right: 60px;
+}
+
+@media(max-width:960px) {
+    div.player-area {
+        margin-bottom: auto;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    div.player-card-area{
+        width: 50vh;
+        /* margin: 0px 20px; */
+    }
+
+    #alert-bingo{
+        width: 50px;
+        font-size: 10px;
+        margin: 0px 10px;
+    }
+}
+
+@media(min-height:820px) {
+    div.player-area {
+        margin-top: 40px;
+    }
+}
