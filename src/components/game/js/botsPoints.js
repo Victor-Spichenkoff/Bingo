@@ -56,7 +56,7 @@ function rightNumbers (array) {
                 rightBotNumbers++
             }
         }
-        if(rightBotNumbers >= 15) {
+        if(rightBotNumbers >= 15) {//15
             return 'win'
         }
     }

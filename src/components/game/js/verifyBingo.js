@@ -37,6 +37,7 @@ function verifyUnlock() {
         bingoButton2.classList.remove('locked')
         // bingoButtonOn =  document.getElementById('alert-bingo')
         bingoButton.onclick = verifyBingo
+        bingoButton2.onclick = verifyBingo
     }
     
     if(checkedNumbers <15) {
