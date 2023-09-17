@@ -1,6 +1,6 @@
 .bot-area {
     width: 17vw;
-    height: 417px;
+    height: 48vh;
     position: absolute;
     top: 10vh;/* COlocado no header */
     background-color: aliceblue;
@@ -17,7 +17,7 @@
 }
 
 .infoBots {
-    font-size: 30px;
+    font-size: 2vw;
     text-align: center;
     margin: 0px;
     padding: 4px;
@@ -31,7 +31,8 @@
 .bot{
     background-color: black;
     color: white;
-    width: 10vw;
+    width: 70%;
+    max-height: 15%;
     /* display: flex;
     justify-content: space-around;
     align-items: center; */
@@ -39,6 +40,10 @@
     grid-template-columns: 1fr 2vw;
     padding-left: 4px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
 .bot1 {
@@ -58,8 +63,9 @@
 
 .player {
     background-color: rgb(153, 9, 9);
-    width: 10vw;
-
+    width: 70%;
+    height: 15%;
+    margin-bottom: 40px;
 }
 
 @media(max-width:960px) {
@@ -71,6 +77,11 @@
         border-radius: 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center; */      
  
     }
 
@@ -79,18 +90,23 @@
     }
     
     .bot {
-        display: flex;
+        position: relative;
+        /* display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-around; */
         height: 100%;
-        width: 100%;
     }
     .player {
         display: flex;
         align-items: center;
         justify-content: space-around;
         height: 100%;
-        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .bot-area {
+        max-height: 600px;
     }
 }
 /* 

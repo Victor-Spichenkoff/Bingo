@@ -43,7 +43,7 @@ export default class AllBot extends React.Component {
         <Bot botID={2} name={this.names[1]} points={0}></Bot>
         <Bot botID={3} name={this.names[2]} points={0}></Bot>
         <Bot botID={4} name={this.names[3]} points={0}></Bot>
-        <Bot botID={'player'} name='Offline' points={''}></Bot>
+        <Bot botID={'player'} className='bot' name='Offline' points={''}></Bot>
     </div>)
     }
 }

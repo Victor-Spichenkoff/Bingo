@@ -77,3 +77,9 @@
         margin: 70px 0px 50px 0px;
     }
 }
+
+@media  (min-width: 1440px) {
+    .internal-ball {
+        font-size: 2vw;
+    }
+}
