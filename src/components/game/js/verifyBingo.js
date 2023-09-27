@@ -22,7 +22,7 @@ function getElement(id) {
 //15 selecionados?
 function verifyUnlock() {
     const numbers = $('.player-number')
-    let checkedNumbers = 0
+    let checkedNumbers = 15//0
 
     numbers.each((i, num) => {
         if(num.classList.contains('selected-number')) {

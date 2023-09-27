@@ -1,3 +1,3 @@
 # Bingo
 
-Bingo criado usando React
+Bingo criado usando **React**

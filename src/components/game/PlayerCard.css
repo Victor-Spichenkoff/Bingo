@@ -3,13 +3,15 @@ div.player-area {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    position: absolute;
+    bottom: 20px;
+    width: 100vw;
 }
 
 div.player-card-area {
     background-color: white;
     width: 40vw;
     border-radius: 20px;
-
 }
 
 
@@ -64,11 +66,14 @@ p.selected-number {
     height: 5vh;
     padding: 2px 7px;
     border-radius: 5px;
+    /* color: rgb(238, 252, 54); */
+    /* background-color: rgb(207, 6, 6); */
     background-color: rgb(207, 6, 6);
-    color: rgb(238, 252, 54);
+    color: rgb(66, 240, 31);
     box-shadow: 0px 2px 4px 0px black;
     font-style: oblique;
     font-size: larger;
+    font-weight: 800;
 }
 
 #alert-bingo:hover {
@@ -111,5 +116,15 @@ button.alert-bingo2{
 @media(min-height:820px) {
     div.player-area {
         margin-top: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #alert-bingo {
+        padding: 20px;
+        height: 10vh;
+        width: 15vw;
+        font-size: 3vw;
+        border-radius: 20px;
     }
 }
