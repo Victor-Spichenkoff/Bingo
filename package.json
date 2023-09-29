@@ -1,8 +1,6 @@
 {
-  "name": "Bingo",
-
+  "name": "bingo",
   "homepage": "https://Victor-Spichenkoff.github.io/Bingo",
-
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "gh-pages": "^6.0.0"
   }
 }
