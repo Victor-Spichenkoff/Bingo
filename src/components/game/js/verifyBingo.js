@@ -93,11 +93,11 @@ function youWin() {
 }
 
 
-//para teste/ coloca classe em
+//para teste/ coloca classe em todos
 function putClass() {
     const numbers = getElement('.player-number')
     for(let c =0; c<14; c++) {
         numbers.addClass('selected-number')
     }
 }
-setTimeout(putClass, 1000)
+// setTimeout(putClass, 1000)
