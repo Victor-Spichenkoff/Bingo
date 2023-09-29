@@ -5,6 +5,7 @@ div.player-area {
     flex-wrap: nowrap;
     position: absolute;
     bottom: 20px;
+    margin-top: 25px;
     width: 100vw;
 }
 
@@ -92,18 +93,26 @@ button.alert-bingo2{
     margin-right: 60px;
 }
 
-@media(max-width:960px) {
+@media(max-width:960px) { /*Mobile*/
     div.player-area {
-        margin-bottom: auto;
+        position: absolute;
+        bottom: 20px;
         width: 100vw;
         display: flex;
         justify-content: space-around;
         margin: auto;
+        border-radius: 20px;
     }
 
     div.player-card-area{
-        width: 50vh;
+        width: 55vh;
         /* margin: 0px 20px; */
+    }
+
+    p.player-number {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
     }
 
     #alert-bingo{
@@ -113,18 +122,44 @@ button.alert-bingo2{
     }
 }
 
-@media(min-height:820px) {
+
+
+@media (min-width: 1440px) {
     div.player-area {
-        margin-top: 40px;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    #alert-bingo {
+        padding: 0 20px;
+        height: 70px;
+        width: fit-content;
+        text-align: center;
+        font-size: 40px;
+        border-radius: 20px;
     }
 }
 
-@media (min-width: 1440px) {
-    #alert-bingo {
-        padding: 20px;
-        height: 10vh;
-        width: 15vw;
-        font-size: 3vw;
-        border-radius: 20px;
+/* @media (min-height: 900px) and (max-width: 960px) {
+    div.player-area {
+        position: relative;
+        margin-top: 23px;
+    }
+} */
+
+/* @media(min-height:820px) {
+    div.player-area {
+        margin-top: 40px;
+    }
+} */
+
+@media (max-height: 1000px) { /* Pequeno = cola no meio do resto */
+    main {
+        height: fit-content;
+    }
+    
+    div.player-area {
+        position: relative;
+        margin-top: 23px;
     }
 }

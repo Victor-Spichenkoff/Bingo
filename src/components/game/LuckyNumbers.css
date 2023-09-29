@@ -34,6 +34,16 @@
     .lucky-numbers {
         width: 100%;
         position: relative;
+        overflow-x: scroll;
+    }
+
+    .lucky, .ball {
+        font-size: 10px;
+    }
+
+    .ball {
+        width: 17px;
+        height: 17px;
     }
 }
 

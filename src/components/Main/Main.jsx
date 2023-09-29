@@ -1,3 +1,4 @@
+import './Main.css'
 import LuckyNumbers from "../game/LuckyNumbers";
 import PlayerCard from "../game/PlayerCard";
 import CuurentLuckyNumber from "../game/CurrentLuckyNumber";

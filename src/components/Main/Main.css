@@ -1,0 +1,16 @@
+main {
+    max-width: 100vw;
+    height: 98vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightskyblue;
+    width: 2px;
+}
+
+::-webkit-scrollbar {
+    background-color: skyblue;
+    width: 4px;
+    height: 4px;
+}

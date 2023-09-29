@@ -75,6 +75,22 @@
         margin: 0px;
         top: auto;
         margin: 70px 0px 50px 0px;
+
+        width: 100px;
+        height: 100px;
+        /* transform: translate(-17%); */
+        
+    }
+
+    .internal-ball {
+        width:40px;
+        height: 40px;
+
+    }
+
+    .external-ball {
+        width: 80px;
+        height: 80px;
     }
 }
 
