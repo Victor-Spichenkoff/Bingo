@@ -1,6 +1,6 @@
 {
   "name": "bingo",
-  "homepage": "https://Victor-Spichenkoff.github.io/Bingo",
+  "homepage": "https://Victor-Spichenkoff.github.io/Bingo/build/index.html",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
